@@ -334,3 +334,122 @@ body {
         font-size: 26px;
     }
 }
+
+
+
+/* Welcome Special */
+
+.offer-section {
+    background-color: #fffaf6;
+    padding: 80px 48px;
+}
+
+.offer-section .container {
+    width: 100%;
+    max-width: 1184px;
+}
+
+.offer-box {
+    width: 100%;
+    max-width: 1184px;
+    min-height: 498px;
+    margin: 0 auto;
+    background: radial-gradient(ellipse at center,
+            #493128 0%,
+            #2c1b16 75%);
+    border-radius: 12px;
+    padding: 45px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.offer-label {
+    display: inline-block;
+    background-color: #49332c;
+    color: #f3e5d8;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.offer-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 0 0 17px;
+}
+
+.offer-box p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #d4c6c0;
+    max-width: 430px;
+    margin: 0 auto 27px;
+}
+
+.offer-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.offer-code {
+    display: inline-block;
+    border: 1px dashed #94602e;
+    border-radius: 4px;
+    padding: 10px 16px;
+    color: #f1e2d7;
+    font-size: 11px;
+}
+
+.offer-btn {
+    display: inline-block;
+    background-color: #925b2d;
+    color: white;
+    text-decoration: none;
+    padding: 11px 23px;
+    border-radius: 4px;
+    font-size: 11px;
+    transition: background-color 0.2s;
+}
+
+.offer-btn:hover {
+    background-color: #ad7440;
+}
+
+@media (max-width: 768px) {
+    .offer-section {
+        padding: 60px 24px;
+    }
+
+    .offer-box {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 520px) {
+    .offer-section {
+        padding: 45px 16px;
+    }
+
+    .offer-box {
+        min-height: 0;
+        padding: 45px 18px;
+    }
+
+    .offer-box h2 {
+        font-size: 30px;
+    }
+
+    .offer-actions {
+        flex-direction: column;
+    }
+}
