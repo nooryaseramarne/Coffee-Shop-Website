@@ -1,0 +1,176 @@
+
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: #fffaf6;
+    font-family: 'DM Sans', sans-serif;
+    color: #21130e
+}
+
+.favorites {
+    background: #fcf2e8;
+    padding: 85px 0 83px
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 47px
+}
+
+.eyebrow {
+    font-size: 10px;
+    font-weight: 600;
+    color: #915b31;
+    letter-spacing: 1px
+}
+
+.section-heading h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin: 7px 0 9px
+}
+
+.section-heading p {
+    font-size: 13px;
+    color: #655b57;
+    margin: 0
+}
+
+.coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px
+}
+
+.coffee-card {
+    background: #fff;
+    border: 1px solid #eee8e3;
+    border-radius: 6px;
+    overflow: hidden
+}
+
+.coffee-image {
+    position: relative;
+    height: 256px;
+    overflow: hidden;
+}
+
+.coffee-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.coffee-badge {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    background: #fff8f1;
+    color: #89552e;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 600
+}
+
+.price {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    background: #24150f;
+    color: #fff;
+    padding: 5px 9px;
+    border-radius: 3px;
+    font-size: 11px
+}
+
+.coffee-content {
+    padding: 18px
+}
+
+.coffee-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    margin: 0 0 7px
+}
+
+.coffee-content p {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #6b625e;
+    min-height: 34px;
+    margin: 0 0 12px
+}
+
+.roast-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 10px;
+    margin-bottom: 5px
+}
+
+.roast-info span:last-child {
+    color: #915b31
+}
+
+.roast-bar {
+    height: 5px;
+    background: #f0e6dc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px
+}
+
+.roast-bar div {
+    height: 100%;
+    background: #93602f;
+    border-radius: 10px
+}
+
+.coffee-content button {
+    width: 100%;
+    padding: 9px;
+    border: 0;
+    border-radius: 4px;
+    background: #efe5da;
+    color: #1e1511;
+    font: 12px 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: background .2s
+}
+
+.coffee-content button:hover {
+    background: #ddc7b2
+}
+
+@media(max-width:768px) {
+    .coffee-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}
+
+@media(max-width:520px) {
+    .coffee-grid {
+        grid-template-columns: 1fr
+    }
+
+    .section-heading h1 {
+        font-size: 26px
+    }
+
+    .favorites {
+        padding: 65px 0
+    }
+}
